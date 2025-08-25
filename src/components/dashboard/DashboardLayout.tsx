@@ -197,7 +197,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
     }
 
     try {
-      const response = await axios.get<UserData>(`${process.env.NEXT_PUBLIC_API_URL}/user`, {
+      const response = await axios.get<UserData>(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Accept': 'application/json',
