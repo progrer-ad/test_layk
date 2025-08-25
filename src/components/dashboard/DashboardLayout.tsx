@@ -197,7 +197,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
     }
 
     try {
-      const response = await axios.get<UserData>(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user`, {
+      const response = await axios.get<UserData>(`https://68ac5f519148d.xvest1.ru/api/user`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Accept': 'application/json',
@@ -224,7 +224,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
       }
 
       if (apiUser.current_avatar && !apiUser.avatar) {
-        apiUser.avatar = `${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/${apiUser.current_avatar.path}`;
+        apiUser.avatar = `https://68ac5f519148d.xvest1.ru/storage/${apiUser.current_avatar.path}`;
         
       }
 
@@ -281,7 +281,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
     const token = localStorage.getItem('token');
     if (token) {
       try {
-        await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/logout`, {}, {
+        await axios.post(`https://68ac5f519148d.xvest1.ru/api/logout`, {}, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Accept': 'application/json',
