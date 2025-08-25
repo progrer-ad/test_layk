@@ -2,9 +2,8 @@
 import axios from "axios";
 
 // Get API base URL from environment variable.
-// Ensure NEXT_PUBLIC_API_URL is set in your .env.local file (e.g., NEXT_PUBLIC_API_URL=http://localhost:8000/api)
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api",
+  baseURL: process.env.NEXT_PUBLIC_API_URL || "https://68ac5f519148d.xvest1.ru/api",
   withCredentials: true, // Important for sending and receiving cookies across origins (e.g., for Laravel Sanctum)
 });
 

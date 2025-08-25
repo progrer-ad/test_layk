@@ -27,7 +27,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { Lock } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 /**
  * Backend API chaqiruvlari uchun yordamchi funksiya.

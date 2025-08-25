@@ -9,7 +9,7 @@ import { customTheme } from "@/components/chat/theme";
 import axios from 'axios';
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'http://localhost:8000/api';
+axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_URL;
 
 export default function ChatDashboard() {
   const [selectedChat, setSelectedChat] = useState(null);
@@ -32,7 +32,7 @@ const fetchCurrentUser = async () => {
 
     // To‘g‘ri avatar URL-ni yasab olish
     const avatarUrl = user.avatar_url
-      ? user.avatar_url // bu allaqachon http://localhost:8000/storage/... bo'lishi kerak
+      ? user.avatar_url 
       : `https://placehold.co/40x40/007bff/ffffff?text=${user.name?.[0]?.toUpperCase() || 'U'}`;
 
     setCurrentUserId(user.id);
@@ -62,7 +62,7 @@ const fetchCurrentUser = async () => {
   }, []);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/sanctum/csrf-cookie');
+    axios.get('https://68ac5f519148d.xvest1.ru/sanctum/csrf-cookie');
     fetchCurrentUser();
     fetchChatList();
     const interval = setInterval(fetchChatList, 5000);
