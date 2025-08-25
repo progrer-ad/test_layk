@@ -1,0 +1,638 @@
+{
+  "title": "Welcome to My App",
+  "placeholder": "Enter your name...",
+  "submit_button": "Submit",
+  "home": "Home",
+  "aboutUs": "About Us",
+  "servicesm": "Services",
+  "news": "News",
+  "contacts": "Contact",
+  "changeLanguage": "Change Language",
+  "heroTitle1": "Find Your Perfect Match.",
+  "heroTitle2": "Your Story Starts Here.",
+  "heroDescription": "Connect with people who share your interests and passions. Our smart algorithm makes finding your ideal partner easier than ever.",
+  "joinNow": "Join Now",
+  "heroImageAlt": "Dating App Illustration",
+
+  "about": {
+    "title": "About Elayk",
+    "subtitle": "Elayk is more than just a dating app – it’s a safe, vibrant space where people from all walks of life meet, connect, and create beautiful stories together.",
+    "cards": {
+      "matchesTitle": "1M+ Matches",
+      "matchesDesc": "Over one million hearts have found their perfect match with Elayk.",
+      "securityTitle": "Security First",
+      "securityDesc": "Your privacy is our top priority with advanced encryption and verification.",
+      "communityTitle": "Friendly Community",
+      "communityDesc": "A welcoming community where conversations grow into relationships."
+    },
+    "highlights": {
+      "awardTitle": "Award-Winning Platform",
+      "awardText": "Recognized globally for innovation in online matchmaking.",
+      "diverseTitle": "Diverse & Inclusive",
+      "diverseText": "We embrace diversity and create spaces where everyone belongs."
+    },
+    "cta": "Join Elayk Today"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Explore our innovative features designed to help you connect, chat, and build genuine relationships effortlessly.",
+    "cards": {
+      "advancedMatching": {
+        "title": "Advanced Matching",
+        "desc": "AI-powered matchmaking to find the most compatible partners for you."
+      },
+      "secureChat": {
+        "title": "Secure Chat",
+        "desc": "End-to-end encrypted chat ensuring your conversations are private."
+      },
+      "verifiedProfiles": {
+        "title": "Verified Profiles",
+        "desc": "Every user is verified to ensure authenticity and safety."
+      },
+      "easySearch": {
+        "title": "Easy Search",
+        "desc": "Filter by interests, location, and more to find your perfect match."
+      }
+    }
+  },
+   "contact": {
+    "title": "Get in Touch",
+    "sendMessageTitle": "Send Us a Message",
+    "name": "Your Name",
+    "email": "Your Email",
+    "subject": "Subject",
+    "message": "Your Message",
+    "sendButton": "Send Message",
+    "sentButton": "Message Sent!",
+    "address": "123 Love Street, Heart City",
+    "emailAddress": "info@datingapp.com",
+    "phone": "+1 (123) 456-7890"
+  },
+  "loginTitle": "Login Page",
+  "emailLabel": "Email",
+  "passwordLabel": "Password",
+  "captchaLabel": "Capcha",
+  "forgotPassword": "Forgot your password?",
+  "loginButton": "Login",
+  "noAccount": "Do you have an account?",
+  "registerLink": "Register",
+   "registerForm": {
+    "title": "Registration",
+    "title_sh": "Step",
+    "title_i": "of",
+    "fullNameRequired": "Full Name is required.",
+    "emailRequired": "Email Address is required.",
+    "passwordRequired": "Password is required.",
+    "passwordConfirmationRequired": "Confirm Password is required.",
+    "passwordsDoNotMatch": "Passwords do not match.",
+    "validEmail": "Please enter a valid email address.",
+    "passwordLength": "Password must be at least 8 characters long.",
+    "genderRequired": "Gender is required.",
+    "coupleTypeRequired": "Please select at least one couple type.",
+    "heightRequired": "Height is required.",
+    "weightRequired": "Weight is required.",
+    "heightNumber": "Height must be a number.",
+    "heightRange": "Height must be between 100-250cm.",
+    "weightNumber": "Weight must be a number.",
+    "weightRange": "Weight must be between 20-300kg.",
+    "ageRangeRequired": "Age Range is required.",
+    "completeRequiredFields": "Please correctly fill out all required fields for this step.",
+    "previousButton": "Previous",
+    "nextButton": "Next",
+    "registerButton": "Register",
+    "alreadyHaveAccount": "Already have an account?",
+    "logIn": "Log In",
+    "lookingForGenderRequired": "Who you are looking for is required.",
+    "termsRequired": "You must agree to the terms and conditions.",
+    "registrationSuccessMessage": "Registration successful! Please confirm your email.",
+    "registrationFailureMessage": "Registration failed.",
+    "networkErrorMessage": "Network error: Failed to connect to server."
+  },
+  "register_step1": {
+    "your_information": "Your Basic Information",
+    "full_name": "Full Name",
+    "email_address" : "Email Address",
+    "password": "Password",
+    "password_confirm": "Confirm password"
+  },
+  "step2": {
+    "title": "Your Personal Details",
+    "my_gender": "My Gender",
+    "gender_options": {
+      "woman": "Woman",
+      "man": "Man",
+      "couple": "We are a couple",
+      "undefined": "Undefined"
+    },
+    "couple_details": {
+      "woman_woman": "Woman + Woman",
+      "man_woman": "Man + Woman",
+      "man_man": "Man + Man"
+    },
+    "my_parameters": "My Parameters",
+    "height": "Height (cm)",
+    "weight": "Weight (kg)",
+    "prefer_not_to_answer": "Prefer not to answer",
+    "my_age": "My Age"
+  },
+    "step3": {
+    "title": "Your Interests & Location",
+    "my_interests": "My Interests",
+    "interests": {
+      "sports": "Sports",
+      "music": "Music",
+      "esotericism": "Esotericism",
+      "cooking": "Cooking",
+      "computers": "Computers",
+      "travel": "Travel",
+      "other": "Other"
+    },
+    "specify_other_interests": "Specify Other Interests",
+    "residence": "Place of residence",
+    "languages_spoken": "Languages I speak",
+    "api_error": "API URL is not defined. Please check NEXT_PUBLIC_API_URL environment variable.",
+    "contact_support": "API configuration error. Please contact support.",
+    "failed_to_fetch_countries": "Failed to fetch countries data in expected format.",
+    "could_not_load_countries": "Could not load countries. Please try again.",
+    "failed_to_load_countries_internet": "Failed to load countries. Please check your internet connection.",
+    "failed_to_fetch_languages": "Failed to fetch languages data in expected format.",
+    "could_not_load_languages": "Could not load languages. Please try again.",
+    "failed_to_load_languages_internet": "Failed to load languages. Please check your internet connection."
+  },
+  "step4": {
+    "title": "Your Situation & Condition",
+    "my_situation": "My Situation",
+    "situation_options": {
+      "orphan": "Orphan",
+      "no_father": "No father",
+      "no_mother": "No mother",
+      "dissatisfied_with_parents": "Dissatisfied with parents",
+      "overweight": "Overweight",
+      "mentally_ill": "Mentally ill",
+      "homeless": "Homeless",
+      "disabled": "Disabled",
+      "immigrant": "Immigrant",
+      "non_traditional_family": "Raised in a non-traditional family",
+      "childless": "Childless",
+      "have_children": "I have children",
+      "from_good_family": "From a good family",
+      "other": "Other"
+    },
+    "situation_details": {
+      "specify_disability": "Specify disability",
+      "country_moved_to": "Country moved to",
+      "specify_other_situation": "Specify other situation",
+      "family_type": "Family type:",
+      "family_types": {
+        "woman_woman": "Woman + Woman",
+        "man_man": "Man + Man",
+        "transgender_couple": "Transgender couple"
+      },
+      "childless_reason": "Reason:",
+      "childless_reasons": {
+        "dont_want_children": "I don't want children",
+        "cant_have_children": "I can't have children",
+        "child_passed_away": "My child passed away"
+      },
+      "children_count": "Number of children:",
+      "children_count_options": {
+        "one": "1",
+        "two": "2",
+        "three": "3",
+        "three_plus": "3+"
+      }
+    },
+    "marital_status": "Marital Status",
+    "marital_status_options": {
+      "married": "Married",
+      "divorced": "Divorced",
+      "living_separately": "Living separately",
+      "widow_widower": "Widow/Widower",
+      "civil_partnership": "In a civil partnership"
+    },
+    "spouse_language": "Spouse speaks another language (specify)",
+    "my_condition": "My Condition",
+    "condition_options": {
+      "feel_nothing": "Feel nothing",
+      "depression": "Depression",
+      "no_motivation": "No motivation",
+      "afraid_of_people": "Afraid of people",
+      "illegal_substances": "Use illegal substances",
+      "smoker": "Smoker",
+      "alcoholic": "Alcoholic",
+      "not_interested_in_intimacy": "Not interested in intimacy",
+      "narcissist": "Narcissist",
+      "autism": "Autism",
+      "loneliness": "Loneliness",
+      "happy": "Happy",
+      "wealthy": "Wealthy",
+      "everything_but_not_happy": "Have everything, but not happy",
+      "dont_understand_what_i_want": "Don't understand what I want",
+      "eat_healthy": "Eat healthy",
+      "eat_poorly": "Eat poorly",
+      "overeat": "Overeat",
+      "elevated_mood": "Elevated mood",
+      "life_is_successful": "Feel that my life is successful",
+      "no_financial_problems": "No financial problems",
+      "insufficient_income": "Insufficient income"
+    }
+  },
+  "step5": {
+    "title": "What You're Looking For & Needs",
+    "looking_for": "Who I'm looking for",
+    "looking_for_options": {
+      "man": "Man",
+      "woman": "Woman",
+      "couple": "Couple",
+      "undecided": "Undecided"
+    },
+    "looking_for_couple_details": {
+      "woman_woman": "Woman + Woman",
+      "woman_man": "Woman + Man",
+      "man_man": "Man + Man"
+    },
+    "persons_parameters": "Person's Parameters",
+    "height": "Height",
+    "select_height_range": "Select height range",
+    "height_options": {
+      "140_160": "140 cm - 160 cm",
+      "160_180": "160 cm - 180 cm",
+      "180_plus": "180 cm and above"
+    },
+    "weight": "Weight",
+    "select_weight_range": "Select weight range",
+    "weight_options": {
+      "30_50": "30 kg - 50 kg",
+      "50_70": "50 kg - 70 kg",
+      "70_90": "70 kg - 90 kg",
+      "90_120": "90 kg - 120 kg",
+      "120_plus": "120 kg and above"
+    },
+    "what_to_fulfill": "What I'd like to fulfill",
+    "intimacy": "Intimacy",
+    "intimacy_options": {
+      "bdsm": "BDSM",
+      "classic": "Classic",
+      "swinger": "Swinger",
+      "other": "Other"
+    },
+    "specify_other_intimacy": "Specify Other Intimacy",
+    "open_relationship": "Open relationship",
+    "psychological_need_for": "Psychological need for:",
+    "psychological_roles": {
+      "father": "Father",
+      "mother": "Mother",
+      "sister": "Sister",
+      "brother": "Brother",
+      "grandmother": "Grandmother",
+      "grandfather": "Grandfather",
+      "aunt": "Aunt",
+      "uncle": "Uncle",
+      "mentor": "Mentor"
+    },
+    "need_for_options": {
+      "for_myself": "For myself",
+      "for_my_child": "For my child"
+    },
+    "other_fulfillments": {
+      "phone_conversations": "Person for phone conversations",
+      "friend": "Friend",
+      "spouse": "Spouse",
+      "free_companion": "Free companion for events",
+      "free_skills_training": "Free skills training",
+      "socialization": "Socialization for my children with other children",
+      "housing_for_help": "Willing to offer free housing in exchange for help around the house"
+    },
+    "skills_training_options": {
+      "ready_to_teach": "Ready to teach someone",
+      "need_to_be_taught": "I need to be taught"
+    },
+    "terms_and_agreement": {
+      "text1": "I agree to the",
+      "privacy_policy": "Privacy Policy",
+      "and": "and",
+      "user_agreement": "User Agreement"
+    }
+  },
+  "email_verification": {
+    "title": "Verify Your Email Address",
+    "description_1": "Before proceeding, please verify your email address by clicking the link we just sent to you.",
+    "description_2": "If you did not receive the email, you can request another one.",
+    "resend_button": "Resend Verification Email",
+    "resending_button": "Resending...",
+    "resend_cooldown": "Resend",
+    "back_to_login": "Return to Login Page",
+    "loading_status": "Checking verification status...",
+    "success_title": "Email Verified!",
+    "success_description": "Your email address has been successfully verified. You can now log in."
+  },
+  "snackbar_messages": {
+    "unauthenticated": "You are not logged in. Please log into your account.",
+    "check_email": "Please verify your email address.",
+    "already_verified": "Your email address has already been verified!",
+    "user_data_fetch_error": "Error fetching user data. Please refresh the page and try again.",
+    "session_expired": "Your session has expired. Please log in again (or close and reopen your browser).",
+    "network_error": "Network Error: Failed to connect to the server. Please check your internet connection.",
+    "resend_success": "Verification email sent successfully!",
+    "resend_fail": "An error occurred while resending the verification email.",
+    "email_not_found": "Email address not found. Please refresh the page or log into your account."
+  },
+  "reset_password": {
+      "title": "Set New Password",
+      "email_label": "Your Email Address",
+      "new_password_label": "New Password",
+      "confirm_password_label": "Confirm New Password",
+      "button_text": "Reset Password",
+      "back_to_login_link": "Return to Login Page"
+    },
+    "notifications_r": {
+      "all_fields_required": "All fields are required.",
+      "password_length_error": "Password must be at least 8 characters long.",
+      "passwords_mismatch": "Passwords do not match.",
+      "reset_success": "Your password has been reset successfully!",
+      "reset_fail": "Failed to reset password.",
+      "network_error": "Network error: Could not connect to the server."
+    },
+    "forgot_password": {
+      "title": "Reset Password",
+      "instruction": "Enter your email address associated with your account to reset your password. A password reset link will be sent to you.",
+      "email_label": "Your Email Address",
+      "button_text": "Send Reset Link",
+      "back_to_login_link": "Return to Login Page",
+      "success_title": "Password Reset Link Sent!",
+      "success_message": "Please check your email inbox (and spam folder). The link should arrive in a few minutes.",
+      "send_again_button": "Send Again"
+    },
+    "notifications_f": {
+      "all_fields_required": "All fields are required.",
+      "password_length_error": "Password must be at least 8 characters long.",
+      "passwords_mismatch": "Passwords do not match.",
+      "reset_success": "Your password has been reset successfully!",
+      "reset_fail": "Failed to reset password.",
+      "network_error": "Network error: Could not connect to the server.",
+      "email_required": "Please enter your email address.",
+      "email_invalid": "Please enter a valid email address.",
+      "reset_link_success": "Password reset link sent successfully! Please check your email.",
+      "reset_link_fail": "Failed to send password reset link."
+    },
+  "header": {
+    "title": "Find Your Match",
+    "subtitle": "Discover people who share your interests",
+    "upgrade_button": "Upgrade",
+    "notifications_title": "Notifications",
+    "notifications_unread_count": "You have {count} unread notifications",
+    "notifications_none": "No new notifications.",
+    "profile_menu": {
+      "profile": "Profile",
+      "settings": "Settings",
+      "logout": "Log Out"
+    },
+    "subscription": {
+      "premium": "Premium",
+      "vip": "VIP",
+      "free": "Free"
+    }
+  },
+   "login_messages": {
+      "not_logged_in": "You are not logged in. Please log in to your account.",
+      "no_user_data": "User data was not returned from the API.",
+      "no_avatar": "Please complete your profile and upload your avatar first.",
+      "fetch_error": "An error occurred while loading user data. Please try logging in again."
+    },
+    "loader_messages": {
+      "loading_system": "The system is loading...",
+      "checking_data": "We are checking your data."
+    },
+    "view_titles": {
+      "profile": "My profile",
+      "messages": "My messages",
+      "likes": "My likes"
+    },
+    "logout_messages": {
+      "logout_success": "You have successfully logged out!",
+      "logout_error": "An error occurred during logout."
+    },
+    "search_messages": {
+      "search_complete": "Search completed!",
+      "redirect_to_payment": "Redirecting to payment page for paid search..."
+    },
+    "Partner":{
+     "discover_your_perfect_soulmate": "Discover Your Perfect Soulmate",
+      "discover_text2": "Uncover genuine connections and meaningful relationships. Your journey starts now! 💖",
+      "free_searches_remaining_today:": "Free searches remaining today:",
+      "buy_more_searches": "Buy More Searches",
+      "searching": "Searching...",
+      "show_my_match": "Show My Match",
+      "age": "Age",
+      "ages_1": "Ages 18-25",
+      "ages_2": "Ages 26-35",
+      "ages_3": "Ages 36-50",
+      "ages_4": "Ages 50+",
+      "location": "Location",
+      "anywhere": "Anywhere",
+      "interests": "Interests",
+      "all_interests": "All Interests",
+      "searching_for_your_match": "Searching for your match...",
+      "failed": "Failed to fetch partner data. Please try again.",
+      "No_matching": "No matching profiles found.",
+      "location_2:": "Location:",
+      "interest_2:": "Interests:",
+      "like": "Like",
+      "unlike": "Unlike",
+      "chat": "Chat",
+      "creating_chat": "Creating Chat...",
+      "no_image": "No Image"
+    },
+    "sidebar": {
+    "dashboard": "Dashboard",
+    "my_profile": "My Profile",
+    "chats": "Chats",
+    "settings": "Settings",
+    "about_us": "About Us",
+    "logout": "Logout"
+  },
+  "notfound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "button_text": "Go to Homepage"
+  },
+  "terms": {
+    "title": "User Agreement",
+    "for_alike": "for Alike",
+    "effective_date": "Effective Date: August 2, 2025",
+    "intro_paragraph_1": "Welcome to **Alike**! This User Agreement («**Agreement**») is a legally binding contract between you («**User**») and **Alike LLC** («**Alike**», «we», «us», or «our») governing your use of our dating platform, website, and related services («**Service**»).",
+    "intro_paragraph_2": "By accessing or using Alike, you agree to be bound by this Agreement and confirm that you are at least 18 years old.",
+    "contact_us": "For any questions, contact us at: ",
+    "sections": [
+      {
+        "title": "1. Eligibility",
+        "points": [
+          "You must be a natural person aged 18 or older to use Alike.",
+          "You may not use Alike if you are prohibited by law in your country of residence."
+        ]
+      },
+      {
+        "title": "2. Account Registration",
+        "points": [
+          "You may register using email or third-party social networks.",
+          "You are responsible for maintaining the confidentiality of your login credentials."
+        ]
+      },
+      {
+        "title": "3. Paid Features",
+        "points": [
+          "Alike offers paid services, including: «Invisible» mode (browse anonymously), Ability to send and read messages, Profile boosting (top listing), Digital gifts, Subscription plans.",
+          "Payment is required in advance. All purchases are final and non-refundable, except as required by law."
+        ]
+      },
+      {
+        "title": "4. Content and Conduct",
+        "points": [
+          "Users are solely responsible for all content they post.",
+          "Alike is not responsible for false, misleading, or inappropriate user information.",
+          "You agree not to: Impersonate others, Post illegal, offensive, or harmful content, Solicit money or engage in fraudulent behavior."
+        ]
+      },
+      {
+        "title": "5. No Identity Verification",
+        "points": [
+          "We do not verify users' identities, documents, or passports. Please exercise caution when communicating with others."
+        ]
+      },
+      {
+        "title": "6. Termination",
+        "points": [
+          "We may suspend or terminate your access to the Service at our discretion, especially if you violate this Agreement."
+        ]
+      },
+      {
+        "title": "7. Limitation of Liability",
+        "points": [
+          "Alike is not liable for: User behavior, Unsuccessful matches, Any damages resulting from the use of the Service."
+        ]
+      },
+      {
+        "title": "8. Privacy",
+        "points": [
+          "See our Privacy Policy for how we collect, use, and protect your personal data."
+        ]
+      },
+      {
+        "title": "9. Jurisdiction",
+        "points": [
+          "This Agreement is governed by the laws of the State of Delaware, United States, without regard to its conflict of law principles."
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "for_alike": "for Alike",
+    "effective_date": "Effective Date: August 2, 2025",
+    "intro_text": "Alike LLC (“Alike,” “we,” “us,” or “our”) respects your privacy. This Privacy Policy describes how we collect, use, disclose, and protect your personal data when you use the Alike dating platform, website, and related services (“Service”).",
+    "section_1_title": "1. Data We Collect",
+    "section_1_points": [
+      {
+        "label": "Account Information: ",
+        "text": "email, name, date of birth, gender, preferences"
+      },
+      {
+        "label": "Profile Content: ",
+        "text": "photos, descriptions, interests"
+      },
+      {
+        "label": "Payment Data: ",
+        "text": "processed securely through third-party providers"
+      },
+      {
+        "label": "Device and Usage Data: ",
+        "text": "IP address, browser, location"
+      },
+      {
+        "label": "Messages and Interactions: ",
+        "text": "within the platform"
+      }
+    ],
+    "section_2_title": "2. How We Use Your Data",
+    "section_2_points": [
+      {
+        "label": "To provide and operate the Service",
+        "text": ""
+      },
+      {
+        "label": "To match users and display relevant profiles",
+        "text": ""
+      },
+      {
+        "label": "To process payments for premium features",
+        "text": ""
+      },
+      {
+        "label": "To communicate with you",
+        "text": " (e.g., notifications, support)"
+      },
+      {
+        "label": "To improve and personalize the platform",
+        "text": ""
+      }
+    ],
+    "section_3_title": "3. Sharing Your Data",
+    "section_3_intro": "We may share your data with:",
+    "section_3_points": [
+      {
+        "label": "Service providers",
+        "text": " (hosting, analytics, payment processors)"
+      },
+      {
+        "label": "If required by law or to protect rights",
+        "text": ""
+      },
+      {
+        "label": "With your consent",
+        "text": " (e.g., when linking social media accounts)"
+      }
+    ],
+    "section_3_outro": "We do not sell your personal data.",
+    "section_4_title": "4. Cookies and Tracking",
+    "section_4_text": "We use cookies and similar technologies to improve the user experience, analyze traffic, and personalize content.",
+    "section_5_title": "5. International Data Transfers",
+    "section_5_text": "Your data may be transferred to and processed in countries outside of your own. We take appropriate measures to protect your data.",
+    "section_6_title": "6. Data Retention",
+    "section_6_text": "We store your data as long as your account is active or as necessary to comply with legal obligations.",
+    "section_7_title": "7. Your Rights",
+    "section_7_intro": "Depending on your location, you may have the right to:",
+    "section_7_points": [
+      {
+        "label": "Access, correct, or delete your data",
+        "text": ""
+      },
+      {
+        "label": "Withdraw consent",
+        "text": ""
+      },
+      {
+        "label": "Object to or restrict certain processing",
+        "text": ""
+      },
+      {
+        "label": "Lodge a complaint with a data protection authority",
+        "text": ""
+      }
+    ],
+    "section_8_title": "8. Children's Privacy",
+    "section_8_text": "The Service is intended for users 18 and older. We do not knowingly collect data from minors.",
+    "section_9_title": "9. Data Security",
+    "section_9_text": "We use encryption, firewalls, and other technical and organizational measures to protect your personal data.",
+    "section_10_title": "10. Contact Us",
+    "section_10_text_1": "For questions and inquiries, contact: ",
+    "section_10_text_2": "We may update this Privacy Policy. If there are material changes, we will notify you through the Service or by other means."
+  },
+  "news_section": {
+    "title": "Latest News",
+    "no_image": "No image available",
+    "loading": "Loading...",
+    "error": "Could not load news. Please try again later.",
+    "no_news": "No news available at the moment."
+  }
+    
+}

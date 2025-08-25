@@ -1,0 +1,646 @@
+{
+  "title": "Bienvenido a Mi App",
+  "placeholder": "Ingrese su nombre...",
+  "submit_button": "Enviar",
+  "home": "Inicio",
+  "aboutUs": "Sobre Nosotros",
+  "servicesm": "Servicios",
+  "news": "Noticias",
+  "contacts": "Contacto",
+  "changeLanguage": "Cambiar idioma",
+  "heroTitle1": "Encuentra tu pareja perfecta.",
+  "heroTitle2": "Tu historia comienza aquí.",
+  "heroDescription": "Conéctate con personas que compartan tus intereses y pasiones. Nuestro algoritmo inteligente hace que encontrar tu pareja ideal sea más fácil que nunca.",
+  "joinNow": "Únete ahora",
+  "heroImageAlt": "Ilustración de aplicación de citas",
+  "about": {
+    "title": "Acerca de Elayk",
+    "subtitle": "Elayk es más que una app de citas: es un espacio seguro y vibrante donde personas de todos los ámbitos se encuentran, conectan y crean historias hermosas.",
+    "cards": {
+      "matchesTitle": "Más de 1 millón de coincidencias",
+      "matchesDesc": "Más de un millón de corazones han encontrado su pareja perfecta con Elayk.",
+      "securityTitle": "Seguridad Primero",
+      "securityDesc": "Tu privacidad es nuestra máxima prioridad con cifrado y verificación avanzada.",
+      "communityTitle": "Comunidad Amigable",
+      "communityDesc": "Una comunidad acogedora donde las conversaciones se convierten en relaciones."
+    },
+    "highlights": {
+      "awardTitle": "Plataforma Galardonada",
+      "awardText": "Reconocida globalmente por la innovación en citas en línea.",
+      "diverseTitle": "Diversa e Inclusiva",
+      "diverseText": "Abrazamos la diversidad y creamos espacios donde todos pertenecen."
+    },
+    "cta": "Únete a Elayk Hoy"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Explora nuestras funciones innovadoras diseñadas para ayudarte a conectar, chatear y construir relaciones genuinas fácilmente.",
+    "cards": {
+      "advancedMatching": {
+        "title": "Emparejamiento Avanzado",
+        "desc": "Emparejamiento impulsado por IA para encontrar los socios más compatibles para ti."
+      },
+      "secureChat": {
+        "title": "Chat Seguro",
+        "desc": "Chat cifrado de extremo a extremo que garantiza la privacidad de tus conversaciones."
+      },
+      "verifiedProfiles": {
+        "title": "Perfiles Verificados",
+        "desc": "Cada usuario está verificado para garantizar autenticidad y seguridad."
+      },
+      "easySearch": {
+        "title": "Búsqueda Fácil",
+        "desc": "Filtra por intereses, ubicación y más para encontrar tu pareja perfecta."
+      }
+    }
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "sendMessageTitle": "Envíanos un Mensaje",
+    "name": "Tu Nombre",
+    "email": "Tu Correo",
+    "subject": "Asunto",
+    "message": "Tu Mensaje",
+    "sendButton": "Enviar Mensaje",
+    "sentButton": "¡Mensaje Enviado!",
+    "address": "123 Calle del Amor, Ciudad Corazón",
+    "emailAddress": "info@datingapp.com",
+    "phone": "+1 (123) 456-7890"
+  },
+  "loginTitle": "Página de Inicio de Sesión",
+  "emailLabel": "Correo electrónico",
+  "passwordLabel": "Contraseña",
+  "captchaLabel": "Captcha",
+  "forgotPassword": "¿Olvidaste tu contraseña?",
+  "loginButton": "Iniciar Sesión",
+  "noAccount": "¿No tienes cuenta?",
+  "registerLink": "Registrarse",
+   "registerForm": {
+    "title": "Registro",
+    "title_sh": "Paso",
+    "title_i": "de",
+    "fullNameRequired": "Se requiere el nombre completo.",
+    "emailRequired": "Se requiere la dirección de correo electrónico.",
+    "passwordRequired": "Se requiere la contraseña.",
+    "passwordConfirmationRequired": "Se requiere la confirmación de la contraseña.",
+    "passwordsDoNotMatch": "Las contraseñas no coinciden.",
+    "validEmail": "Por favor, introduzca una dirección de correo electrónico válida.",
+    "passwordLength": "La contraseña debe tener al menos 8 caracteres.",
+    "genderRequired": "Se requiere el género.",
+    "coupleTypeRequired": "Por favor, seleccione al menos un tipo de pareja.",
+    "heightRequired": "Se requiere la altura.",
+    "weightRequired": "Se requiere el peso.",
+    "heightNumber": "La altura debe ser un número.",
+    "heightRange": "La altura debe estar entre 100 y 250 cm.",
+    "weightNumber": "El peso debe ser un número.",
+    "weightRange": "El peso debe estar entre 20 y 300 kg.",
+    "ageRangeRequired": "Se requiere el rango de edad.",
+    "completeRequiredFields": "Por favor, complete correctamente todos los campos obligatorios de este paso.",
+    "previousButton": "Anterior",
+    "nextButton": "Siguiente",
+    "registerButton": "Registrarse",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "logIn": "Iniciar sesión",
+    "lookingForGenderRequired": "Se requiere a quién está buscando.",
+    "termsRequired": "Debe aceptar los términos y condiciones.",
+    "registrationSuccessMessage": "¡Registro exitoso! Por favor, confirme su correo electrónico.",
+    "registrationFailureMessage": "Error de registro.",
+    "networkErrorMessage": "Error de red: no se pudo conectar al servidor."
+  },
+   "register_step1": {
+    "your_information": "Tu información básica",
+    "full_name": "Nombre completo",
+    "email_address": "Correo electrónico",
+    "password": "Contraseña",
+    "password_confirm": "Confirmar contraseña"
+  },
+    "step2": {
+    "title": "Tus datos personales",
+    "my_gender": "Mi género",
+    "gender_options": {
+      "woman": "Mujer",
+      "man": "Hombre",
+      "couple": "Somos una pareja",
+      "undefined": "Indefinido"
+    },
+    "couple_details": {
+      "woman_woman": "Mujer + Mujer",
+      "man_woman": "Hombre + Mujer",
+      "man_man": "Hombre + Hombre"
+    },
+    "my_parameters": "Mis parámetros",
+    "height": "Altura (cm)",
+    "weight": "Peso (kg)",
+    "prefer_not_to_answer": "Prefiero no responder",
+    "my_age": "Mi edad"
+  },
+    "step3": {
+    "title": "Tus intereses y ubicación",
+    "my_interests": "Mis intereses",
+    "interests": {
+      "sports": "Deportes",
+      "music": "Música",
+      "esotericism": "Esoterismo",
+      "cooking": "Cocina",
+      "computers": "Informática",
+      "travel": "Viajes",
+      "other": "Otro"
+    },
+    "specify_other_interests": "Especificar otros intereses",
+    "residence": "Lugar de residencia",
+    "languages_spoken": "Idiomas que hablo",
+    "api_error": "La URL de la API no está definida. Por favor, compruebe la variable de entorno NEXT_PUBLIC_API_URL.",
+    "contact_support": "Error de configuración de la API. Por favor, póngase en contacto con el soporte.",
+    "failed_to_fetch_countries": "Error al obtener los datos de los países en el formato esperado.",
+    "could_not_load_countries": "No se pudieron cargar los países. Por favor, inténtelo de nuevo.",
+    "failed_to_load_countries_internet": "No se pudieron cargar los países. Por favor, compruebe su conexión a internet.",
+    "failed_to_fetch_languages": "Error al obtener los datos de los idiomas en el formato esperado.",
+    "could_not_load_languages": "No se pudieron cargar los idiomas. Por favor, inténtelo de nuevo.",
+    "failed_to_load_languages_internet": "No se pudieron cargar los idiomas. Por favor, compruebe su conexión a internet."
+  },
+    "step4": {
+    "title": "Tu situación y condición",
+    "my_situation": "Mi situación",
+    "situation_options": {
+      "orphan": "Huérfano",
+      "no_father": "Sin padre",
+      "no_mother": "Sin madre",
+      "dissatisfied_with_parents": "Insatisfecho con los padres",
+      "overweight": "Sobrepeso",
+      "mentally_ill": "Enfermo mental",
+      "homeless": "Sin hogar",
+      "disabled": "Discapacitado",
+      "immigrant": "Inmigrante",
+      "non_traditional_family": "Criado en una familia no tradicional",
+      "childless": "Sin hijos",
+      "have_children": "Tengo hijos",
+      "from_good_family": "De una buena familia",
+      "other": "Otro"
+    },
+    "situation_details": {
+      "specify_disability": "Especificar discapacidad",
+      "country_moved_to": "País al que se mudó",
+      "specify_other_situation": "Especificar otra situación",
+      "family_type": "Tipo de familia:",
+      "family_types": {
+        "woman_woman": "Mujer + Mujer",
+        "man_man": "Hombre + Hombre",
+        "transgender_couple": "Pareja transgénero"
+      },
+      "childless_reason": "Razón:",
+      "childless_reasons": {
+        "dont_want_children": "No quiero tener hijos",
+        "cant_have_children": "No puedo tener hijos",
+        "child_passed_away": "Mi hijo falleció"
+      },
+      "children_count": "Número de hijos:",
+      "children_count_options": {
+        "one": "1",
+        "two": "2",
+        "three": "3",
+        "three_plus": "3+"
+      }
+    },
+    "marital_status": "Estado civil",
+    "marital_status_options": {
+      "married": "Casado/a",
+      "divorced": "Divorciado/a",
+      "living_separately": "Vive por separado",
+      "widow_widower": "Viudo/a",
+      "civil_partnership": "En una unión civil"
+    },
+    "spouse_language": "El cónyuge habla otro idioma (especificar)",
+    "my_condition": "Mi condición",
+    "condition_options": {
+      "feel_nothing": "No siento nada",
+      "depression": "Depresión",
+      "no_motivation": "Sin motivación",
+      "afraid_of_people": "Miedo a la gente",
+      "illegal_substances": "Usa sustancias ilegales",
+      "smoker": "Fumador/a",
+      "alcoholic": "Alcohólico/a",
+      "not_interested_in_intimacy": "No interesado/a en la intimidad",
+      "narcissist": "Narcisista",
+      "autism": "Autismo",
+      "loneliness": "Soledad",
+      "happy": "Feliz",
+      "wealthy": "Acomodado/a",
+      "everything_but_not_happy": "Tengo todo, pero no soy feliz",
+      "dont_understand_what_i_want": "No entiendo lo que quiero",
+      "eat_healthy": "Como saludablemente",
+      "eat_poorly": "Como mal",
+      "overeat": "Como en exceso",
+      "elevated_mood": "Estado de ánimo elevado",
+      "life_is_successful": "Siento que mi vida es exitosa",
+      "no_financial_problems": "No tengo problemas financieros",
+      "insufficient_income": "Ingresos insuficientes"
+    }
+  },
+    "step5": {
+    "title": "Lo que buscas y tus necesidades",
+    "looking_for": "A quién busco",
+    "looking_for_options": {
+      "man": "Hombre",
+      "woman": "Mujer",
+      "couple": "Pareja",
+      "undecided": "Indeciso"
+    },
+    "looking_for_couple_details": {
+      "woman_woman": "Mujer + Mujer",
+      "woman_man": "Mujer + Hombre",
+      "man_man": "Hombre + Hombre"
+    },
+    "persons_parameters": "Parámetros de la persona",
+    "height": "Altura",
+    "select_height_range": "Seleccionar rango de altura",
+    "height_options": {
+      "140_160": "140 cm - 160 cm",
+      "160_180": "160 cm - 180 cm",
+      "180_plus": "180 cm y superior"
+    },
+    "weight": "Peso",
+    "select_weight_range": "Seleccionar rango de peso",
+    "weight_options": {
+      "30_50": "30 kg - 50 kg",
+      "50_70": "50 kg - 70 kg",
+      "70_90": "70 kg - 90 kg",
+      "90_120": "90 kg - 120 kg",
+      "120_plus": "120 kg y superior"
+    },
+    "what_to_fulfill": "Lo que me gustaría satisfacer",
+    "intimacy": "Intimidad",
+    "intimacy_options": {
+      "bdsm": "BDSM",
+      "classic": "Clásico",
+      "swinger": "Swinger",
+      "other": "Otro"
+    },
+    "specify_other_intimacy": "Especificar otra intimidad",
+    "open_relationship": "Relación abierta",
+    "psychological_need_for": "Necesidad psicológica de:",
+    "psychological_roles": {
+      "father": "Padre",
+      "mother": "Madre",
+      "sister": "Hermana",
+      "brother": "Hermano",
+      "grandmother": "Abuela",
+      "grandfather": "Abuelo",
+      "aunt": "Tía",
+      "uncle": "Tío",
+      "mentor": "Mentor"
+    },
+    "need_for_options": {
+      "for_myself": "Para mí",
+      "for_my_child": "Para mi hijo/a"
+    },
+    "other_fulfillments": {
+      "phone_conversations": "Persona para conversaciones telefónicas",
+      "friend": "Amigo/a",
+      "spouse": "Cónyuge",
+      "free_companion": "Acompañante gratuito para eventos",
+      "free_skills_training": "Entrenamiento de habilidades gratuito",
+      "socialization": "Socialización para mis hijos con otros niños",
+      "housing_for_help": "Dispuesto a ofrecer vivienda gratuita a cambio de ayuda en la casa"
+    },
+    "skills_training_options": {
+      "ready_to_teach": "Listo para enseñar a alguien",
+      "need_to_be_taught": "Necesito que me enseñen"
+    },
+ "terms_and_agreement": {
+      "text1": "Acepto la",
+      "privacy_policy": "Política de privacidad",
+      "and": "y el",
+      "user_agreement": "Acuerdo de usuario"
+    }
+  },
+  "email_verification": {
+      "title": "Verifique su dirección de correo electrónico",
+      "description_1": "Antes de continuar, por favor, verifique su dirección de correo electrónico haciendo clic en el enlace que le acabamos de enviar.",
+      "description_2": "Si no recibió el correo electrónico, puede solicitar otro.",
+      "resend_button": "Reenviar correo de verificación",
+      "resending_button": "Reenviando...",
+      "resend_cooldown": "Reenviar",
+      "back_to_login": "Volver a la página de inicio de sesión",
+      "loading_status": "Comprobando el estado de verificación...",
+      "success_title": "¡Correo electrónico verificado!",
+      "success_description": "Su dirección de correo electrónico ha sido verificada con éxito. Ahora puede iniciar sesión."
+    },
+    "snackbar_messages": {
+      "unauthenticated": "No ha iniciado sesión. Por favor, inicie sesión en su cuenta.",
+      "check_email": "Por favor, verifique su dirección de correo electrónico.",
+      "already_verified": "¡Su dirección de correo electrónico ya ha sido verificada!",
+      "user_data_fetch_error": "Error al obtener los datos del usuario. Por favor, actualice la página e intente de nuevo.",
+      "session_expired": "Su sesión ha expirado. Por favor, inicie sesión de nuevo (o cierre y vuelva a abrir su navegador).",
+      "network_error": "Error de red: No se pudo conectar con el servidor. Por favor, verifique su conexión a internet.",
+      "resend_success": "¡Correo de verificación enviado con éxito!",
+      "resend_fail": "Ocurrió un error al reenviar el correo de verificación.",
+      "email_not_found": "Dirección de correo electrónico no encontrada. Por favor, actualice la página o inicie sesión en su cuenta."
+    },
+      "reset_password": {
+      "title": "Establecer nueva contraseña",
+      "email_label": "Su dirección de correo electrónico",
+      "new_password_label": "Nueva contraseña",
+      "confirm_password_label": "Confirmar nueva contraseña",
+      "button_text": "Restablecer contraseña",
+      "back_to_login_link": "Volver a la página de inicio de sesión"
+    },
+    "notifications_r": {
+      "all_fields_required": "Todos los campos son obligatorios.",
+      "password_length_error": "La contraseña debe tener al menos 8 caracteres.",
+      "passwords_mismatch": "Las contraseñas no coinciden.",
+      "reset_success": "¡Su contraseña ha sido restablecida con éxito!",
+      "reset_fail": "No se pudo restablecer la contraseña.",
+      "network_error": "Error de red: no se pudo conectar al servidor."
+    },
+      "forgot_password": {
+      "title": "Restablecer contraseña",
+      "instruction": "Introduce la dirección de correo electrónico asociada a tu cuenta para restablecer tu contraseña. Se te enviará un enlace para restablecerla.",
+      "email_label": "Su dirección de correo electrónico",
+      "button_text": "Enviar enlace de restablecimiento",
+      "back_to_login_link": "Volver a la página de inicio de sesión",
+      "success_title": "¡Enlace para restablecer contraseña enviado!",
+      "success_message": "Por favor, revisa tu bandeja de entrada (y la carpeta de spam). El enlace debería llegar en unos minutos.",
+      "send_again_button": "Enviar de nuevo"
+    },
+    "notifications_f": {
+      "all_fields_required": "Todos los campos son obligatorios.",
+      "password_length_error": "La contraseña debe tener al menos 8 caracteres.",
+      "passwords_mismatch": "Las contraseñas no coinciden.",
+      "reset_success": "¡Su contraseña ha sido restablecida con éxito!",
+      "reset_fail": "No se pudo restablecer la contraseña.",
+      "network_error": "Error de red: no se pudo conectar al servidor.",
+      "email_required": "Por favor, introduce tu dirección de correo electrónico.",
+      "email_invalid": "Por favor, introduce una dirección de correo electrónico válida.",
+      "reset_link_success": "¡Enlace para restablecer contraseña enviado con éxito! Por favor, revisa tu correo electrónico.",
+      "reset_link_fail": "No se pudo enviar el enlace para restablecer la contraseña."
+    },
+ "header": {
+    "title": "Encuentra tu pareja",
+    "subtitle": "Descubre personas que comparten tus intereses",
+    "upgrade_button": "Actualizar",
+    "notifications_title": "Notificaciones",
+    "notifications_unread_count": "Tienes {count} notificaciones no leídas",
+    "notifications_none": "No hay nuevas notificaciones.",
+    "profile_menu": {
+      "profile": "Perfil",
+      "settings": "Configuración",
+      "logout": "Cerrar sesión"
+    },
+    "subscription": {
+      "premium": "Premium",
+      "vip": "VIP",
+      "free": "Gratis"
+    }
+  },
+   "login_messages": {
+      "not_logged_in": "No ha iniciado sesión. Por favor, inicie sesión en su cuenta.",
+      "no_user_data": "No se devolvieron datos de usuario de la API.",
+      "no_avatar": "Por favor, complete su perfil y suba su avatar primero.",
+      "fetch_error": "Ocurrió un error al cargar los datos del usuario. Por favor, intente iniciar sesión de nuevo."
+    },
+    "loader_messages": {
+      "loading_system": "El sistema se está cargando...",
+      "checking_data": "Estamos verificando sus datos."
+    },
+    "view_titles": {
+      "profile": "Mi perfil",
+      "messages": "Mis mensajes",
+      "likes": "Mis likes"
+    },
+    "logout_messages": {
+      "logout_success": "¡Has cerrado sesión con éxito!",
+      "logout_error": "Ocurrió un error durante el cierre de sesión."
+    },
+    "search_messages": {
+      "search_complete": "¡Búsqueda completada!",
+      "redirect_to_payment": "Redirigiendo a la página de pago para la búsqueda pagada..."
+    },
+ "Partner": {
+    "discover_your_perfect_soulmate": "Descubre a tu Alma Gemela Perfecta",
+    "discover_text2": "Descubre conexiones genuinas y relaciones significativas. ¡Tu viaje comienza ahora! 💖",
+    "free_searches_remaining_today:": "Búsquedas gratuitas restantes hoy:",
+    "buy_more_searches": "Comprar más búsquedas",
+    "searching": "Buscando...",
+    "show_my_match": "Mostrar mi pareja",
+    "age": "Edad",
+    "ages_1": "Edades 18-25",
+    "ages_2": "Edades 26-35",
+    "ages_3": "Edades 36-50",
+    "ages_4": "Edades 50+",
+    "location": "Ubicación",
+    "anywhere": "Cualquier lugar",
+    "interests": "Intereses",
+    "all_interests": "Todos los intereses",
+    "searching_for_your_match": "Buscando tu pareja...",
+    "failed": "Error al obtener los datos del socio. Por favor, inténtelo de nuevo.",
+    "No_matching": "No se encontraron perfiles coincidentes.",
+    "location_2:": "Ubicación:",
+    "interest_2:": "Intereses:",
+    "like": "Me gusta",
+    "unlike": "Ya no me gusta",
+    "chat": "Chat",
+    "creating_chat": "Creando chat...",
+    "no_image": "Sin imagen"
+  },
+   "sidebar": {
+    "dashboard": "Panel de control",
+    "my_profile": "Mi perfil",
+    "chats": "Chats",
+    "settings": "Ajustes",
+    "about_us": "Sobre nosotros",
+    "logout": "Cerrar sesión"
+  },
+   "notfound": {
+    "title": "Página no encontrada",
+    "description": "La página que busca no existe o ha sido movida.",
+    "button_text": "Ir a la página de inicio"
+  },
+  "terms": {
+    "title": "Acuerdo de Usuario",
+    "effective_date": "Fecha de vigencia: 2 de agosto de 2025",
+    "intro_paragraph_1": "¡Bienvenido a Alike! Este Acuerdo de Usuario ('Acuerdo') es un contrato legalmente vinculante entre usted ('Usuario') y Alike LLC ('Alike', 'nosotros') que regula su uso de nuestra plataforma de citas, sitio web y servicios relacionados ('Servicio').",
+    "intro_paragraph_2": "Al acceder o usar Alike, usted acepta cumplir con este Acuerdo y confirma que tiene al menos 18 años.",
+    "contact_us": "Para consultas:",
+    "sections": [
+      {
+        "title": "Elegibilidad",
+        "points": [
+          "Debe ser una persona física de 18 años o más.",
+          "No puede usar Alike si está prohibido por las leyes de su país."
+        ]
+      },
+      {
+        "title": "Registro de cuenta",
+        "points": [
+          "Puede registrarse usando correo electrónico o redes sociales de terceros.",
+          "Usted es responsable de mantener la confidencialidad de sus credenciales de inicio de sesión."
+        ]
+      },
+      {
+        "title": "Funciones de pago",
+        "intro": "Alike ofrece servicios de pago que incluyen:",
+        "points": [
+          "Modo 'Invisible' (navegación anónima)",
+          "Capacidad de enviar y leer mensajes",
+          "Impulso de perfil (lista superior)",
+          "Regalos digitales",
+          "Planes de suscripción"
+        ],
+        "outro": "El pago es por adelantado. Todas las compras son finales y no reembolsables, salvo que lo exija la ley."
+      },
+      {
+        "title": "Contenido y conducta",
+        "points": [
+          "Los usuarios son responsables del contenido que publican.",
+          "Alike no es responsable de información falsa, engañosa o inapropiada.",
+          "Usted acepta no:",
+          "- Hacerse pasar por otros",
+          "- Publicar contenido ilegal, ofensivo o dañino",
+          "- Solicitar dinero o participar en fraude"
+        ]
+      },
+      {
+        "title": "Sin verificación de identidad",
+        "points": [
+          "No verificamos la identidad, documentos o pasaportes de los usuarios. Tenga cuidado al interactuar con otros."
+        ]
+      },
+      {
+        "title": "Terminación",
+        "points": [
+          "Podemos suspender o terminar su acceso al Servicio a nuestra discreción, especialmente si viola este Acuerdo."
+        ]
+      },
+      {
+        "title": "Limitación de responsabilidad",
+        "intro": "Alike no es responsable de:",
+        "points": [
+          "Conducta de los usuarios",
+          "Citas sin éxito",
+          "Daños derivados del uso del Servicio"
+        ]
+      },
+      {
+        "title": "Privacidad",
+        "points": [
+          "Consulte nuestra Política de Privacidad para saber cómo recopilamos, usamos y protegemos sus datos."
+        ]
+      },
+      {
+        "title": "Jurisdicción",
+        "points": [
+          "Este Acuerdo se rige por las leyes del estado de Delaware, EE. UU., sin considerar sus principios de conflicto de leyes."
+        ]
+      }
+    ]
+  },
+   "privacy": {
+    "title": "Política de Privacidad",
+    "for_alike": "para Alike",
+    "effective_date": "Fecha de vigencia: 2 de agosto de 2025",
+    "intro_text": "Alike LLC («Alike», «nosotros») respeta su privacidad. Esta Política de Privacidad describe cómo recopilamos, usamos, divulgamos y protegemos sus datos personales cuando utiliza la plataforma de citas Alike, el sitio web y los servicios relacionados («Servicio»).",
+    "section_1_title": "1. Datos que recopilamos",
+    "section_1_points": [
+      {
+        "label": "Información de la cuenta: ",
+        "text": "correo electrónico, nombre, fecha de nacimiento, género, preferencias"
+      },
+      {
+        "label": "Contenido del perfil: ",
+        "text": "fotos, descripciones, intereses"
+      },
+      {
+        "label": "Datos de pago: ",
+        "text": "procesados de forma segura a través de proveedores de terceros"
+      },
+      {
+        "label": "Datos de dispositivo y uso: ",
+        "text": "dirección IP, navegador, ubicación"
+      },
+      {
+        "label": "Mensajes e interacciones: ",
+        "text": "dentro de la plataforma"
+      }
+    ],
+    "section_2_title": "2. Cómo usamos sus datos",
+    "section_2_points": [
+      {
+        "label": "Para proporcionar y operar el Servicio",
+        "text": ""
+      },
+      {
+        "label": "Para emparejar usuarios y mostrar perfiles relevantes",
+        "text": ""
+      },
+      {
+        "label": "Para procesar pagos de funciones premium",
+        "text": ""
+      },
+      {
+        "label": "Para comunicarnos con usted",
+        "text": " (ej., notificaciones, soporte)"
+      },
+      {
+        "label": "Para mejorar y personalizar la plataforma",
+        "text": ""
+      }
+    ],
+    "section_3_title": "3. Compartir sus datos",
+    "section_3_intro": "Podemos compartir sus datos con:",
+    "section_3_points": [
+      {
+        "label": "Proveedores de servicios",
+        "text": " (alojamiento, análisis, procesadores de pagos)"
+      },
+      {
+        "label": "Si lo exige la ley o para proteger derechos",
+        "text": ""
+      },
+      {
+        "label": "Con su consentimiento",
+        "text": " (ej., al vincular cuentas de redes sociales)"
+      }
+    ],
+    "section_3_outro": "No vendemos sus datos personales.",
+    "section_4_title": "4. Cookies y seguimiento",
+    "section_4_text": "Usamos cookies y tecnologías similares para mejorar la experiencia del usuario, analizar el tráfico y personalizar el contenido.",
+    "section_5_title": "5. Transferencias internacionales de datos",
+    "section_5_text": "Sus datos pueden ser transferidos y procesados en países fuera del suyo. Tomamos medidas adecuadas para proteger sus datos.",
+    "section_6_title": "6. Retención de datos",
+    "section_6_text": "Almacenamos sus datos mientras su cuenta esté activa o según sea necesario para cumplir con obligaciones legales.",
+    "section_7_title": "7. Sus derechos",
+    "section_7_intro": "Dependiendo de su ubicación, puede tener derecho a:",
+    "section_7_points": [
+      {
+        "label": "Acceder, corregir o eliminar sus datos",
+        "text": ""
+      },
+      {
+        "label": "Retirar el consentimiento",
+        "text": ""
+      },
+      {
+        "label": "Oponerse o restringir cierto procesamiento",
+        "text": ""
+      },
+      {
+        "label": "Presentar una queja ante una autoridad de protección de datos",
+        "text": ""
+      }
+    ],
+    "section_8_title": "8. Privacidad de los niños",
+    "section_8_text": "El Servicio está destinado a usuarios mayores de 18 años. No recopilamos datos de menores de forma intencionada.",
+    "section_9_title": "9. Seguridad de los datos",
+    "section_9_text": "Utilizamos encriptación, cortafuegos y otras medidas técnicas y organizativas para proteger sus datos personales.",
+    "section_10_title": "10. Contáctenos",
+    "section_10_text_1": "Para preguntas y consultas, contáctenos: ",
+    "section_10_text_2": "Podemos actualizar esta Política de Privacidad. Si hay cambios sustanciales, le notificaremos a través del Servicio o por otros medios."
+  },
+    "news_section": {
+    "title": "Últimas noticias",
+    "no_image": "Imagen no disponible",
+    "loading": "Cargando...",
+    "error": "No se pudieron cargar las noticias. Por favor, inténtelo de nuevo más tarde.",
+    "no_news": "No hay noticias disponibles en este momento."
+  }
+}
