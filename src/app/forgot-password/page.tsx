@@ -92,7 +92,7 @@ const ForgotPasswordPage = () => {
       }
 
       const csrfAxios = axios.create({
-        baseURL: process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || "http://localhost:8000",
+        baseURL: process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || "https://68ac5f519148d.xvest1.ru",
         withCredentials: true,
       });
       await csrfAxios.get('/sanctum/csrf-cookie');
