@@ -61,7 +61,7 @@ const ServicesSection = () => {
         position: 'relative',
         overflow: 'hidden',
         backgroundImage:
-          `url(${headerImage})`,
+          `url(${headerImage.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
