@@ -304,7 +304,7 @@ const ProfileSetupPage: React.FC = () => {
     }
 
     try {
-      await axios.put(`68ac5f519148d.xvest1.ru/api/profile`, profileData, {
+      await axios.put(`https://68ac5f519148d.xvest1.ru/api/profile`, profileData, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Accept': 'application/json',
@@ -317,7 +317,7 @@ const ProfileSetupPage: React.FC = () => {
         const formData = new FormData();
         formData.append('avatar', avatarFile);
 
-        await axios.post(`68ac5f519148d.xvest1.ru/api/profile/avatar`, formData, {
+        await axios.post(`https://68ac5f519148d.xvest1.ru/api/profile/avatar`, formData, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Accept': 'application/json',
