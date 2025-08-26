@@ -8,6 +8,7 @@ import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import SearchIcon from '@mui/icons-material/Search';
 import { motion, Variants } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import headerImage from '@/assets/img/services.png'
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -60,7 +61,7 @@ const ServicesSection = () => {
         position: 'relative',
         overflow: 'hidden',
         backgroundImage:
-          'url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f)',
+          `url(${headerImage.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
