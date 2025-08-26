@@ -69,7 +69,7 @@ const Header: React.FC<HeaderProps> = ({ user, onLogout, handleDrawerToggle, isS
     const openNotificationsMenu = Boolean(notificationsAnchorEl);
 
     // Laravel API manzilini environment variable'dan oling
-    const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://68ac5f519148d.xvest1.ru/api';
+    const API_BASE_URL = 'https://68ac5f519148d.xvest1.ru/api';
     
     // Foydalanuvchi tokenini localStorage'dan olish
     const userToken = typeof window !== 'undefined' ? localStorage.getItem('token') : null;

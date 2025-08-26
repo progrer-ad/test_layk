@@ -20,6 +20,7 @@ import axios from 'axios';
 import { keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
 import BottomNav from '@/components/layout/BottomNav';
+import { useTranslation } from 'react-i18next';
 
 // --- ANIMATIONS & STYLES ---
 
@@ -198,6 +199,7 @@ const ProfileSetupPage: React.FC = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
+  const { t } = useTranslation('common');
 
   // State for profile data
   const [profileData, setProfileData] = useState<UserProfileData>({
@@ -236,7 +238,7 @@ const ProfileSetupPage: React.FC = () => {
       }
 
       try {
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/user`, {
+        const response = await axios.get(`https://68ac5f519148d.xvest1.ru/api/user`, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Accept': 'application/json',
@@ -255,7 +257,7 @@ const ProfileSetupPage: React.FC = () => {
           });
         }
         if (apiUser?.current_avatar?.path) {
-          setAvatarPreview(`${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/${apiUser.current_avatar.path}`);
+          setAvatarPreview(`https://68ac5f519148d.xvest1.ru/storage/${apiUser.current_avatar.path}`);
         }
       } catch (error: any) {
         setSnackbarMessage('Error loading profile data.');
@@ -302,7 +304,7 @@ const ProfileSetupPage: React.FC = () => {
     }
 
     try {
-      await axios.put(`${process.env.NEXT_PUBLIC_API_URL}/profile`, profileData, {
+      await axios.put(`https://68ac5f519148d.xvest1.ru/api/profile`, profileData, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Accept': 'application/json',
@@ -315,7 +317,7 @@ const ProfileSetupPage: React.FC = () => {
         const formData = new FormData();
         formData.append('avatar', avatarFile);
 
-        await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/profile/avatar`, formData, {
+        await axios.post(`https://68ac5f519148d.xvest1.ru/api/profile/avatar`, formData, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Accept': 'application/json',

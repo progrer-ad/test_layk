@@ -82,7 +82,7 @@ const customTheme = createTheme({
         primary: {
             main: '#FF6B6B', // Yumshoq qizil-pushti - asosiy harakat rangi
             light: '#FF9494', // Asosiy rangning ochiqroq varianti
-            dark: '#E05A5A',  // Asosiy rangning to'qroq varianti
+            dark: '#E05A5A',  // Asosiy rangning to'qroq varianti
             contrastText: '#FFFFFF',
         },
         secondary: {
@@ -103,7 +103,7 @@ const customTheme = createTheme({
         },
         background: {
             default: '#F8F8F8', // Umumiy fon rangi (loyiha bo'yicha)
-            paper: '#FFFFFF',  // Card va shunga o'xshash elementlar foni
+            paper: '#FFFFFF',  // Card va shunga o'xshash elementlar foni
         },
     },
     typography: {
@@ -186,7 +186,7 @@ const customTheme = createTheme({
 });
 
 // YANGILANGAN KOMPONENT: Topilgan partnyor profilini ko'rsatish uchun
-const MatchProfileCard: React.FC<{ profile: PartnerProfile, userTariff: string, baseDomain: string, user: UserData | null }> = ({ profile, userTariff, baseDomain, user }) => {
+const MatchProfileCard: React.FC<{ profile: PartnerProfile, userTariff: string, apiUrl: string, user: UserData | null }> = ({ profile, userTariff, apiUrl, user }) => {
     const theme = useTheme();
     const router = useRouter();
     const [isChatCreating, setIsChatCreating] = useState(false);
@@ -200,17 +200,19 @@ const MatchProfileCard: React.FC<{ profile: PartnerProfile, userTariff: string, 
         if (path.startsWith('http') || path.startsWith('https') || path.startsWith('/')) {
             return path;
         }
+        // Base domainni props orqali qabul qilish
+        const baseDomain = apiUrl.replace('/api', '');
         return `${baseDomain}/storage/${path}`;
     };
 
     const finalImageUrl = getImageUrl(profile.image_url);
-    
+
     // --- FIKSLANGAN XATO: `handleLike` funksiyasi argument qabul qilmaydi, shuning uchun uni chaqirishda ham argument o'tkazilmaydi.
     // Funksiya o'z ichida `profile.id` ni prop orqali oladi.
     const handleLike = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.post('http://127.0.0.1:8000/api/likes/toggle', {
+            const response = await axios.post(`${apiUrl}/likes/toggle`, {
                 liked_user_id: profile.id,
             }, {
                 headers: {
@@ -241,7 +243,7 @@ const MatchProfileCard: React.FC<{ profile: PartnerProfile, userTariff: string, 
 
             // API'ga POST so'rov yuborib, yangi chatni yaratish
             const response = await axios.post(
-                `${baseDomain}/api/chats`,
+                `${apiUrl}/chats`,
                 { partner_id: profile.id }, // O'zgartirildi: user2_id o'rniga partner_id ishlatildi
                 { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -342,21 +344,21 @@ const MatchProfileCard: React.FC<{ profile: PartnerProfile, userTariff: string, 
                         </Box>
                     </Typography>
                     <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: { xs: 2, sm: 2 }, mt: 3 }}>
-                    <Button
-                        startIcon={<FavoriteIcon />}
-                        onClick={handleLike} // Xato tuzatildi: Funksiyaga ortiqcha argument o'tkazilmadi
-                        sx={{
-                            bgcolor: theme.palette.primary.main,
-                            color: 'white',
-                            px: 5,
-                            py: 1.2,
-                            fontSize: '1.1rem',
-                            '&:hover': { bgcolor: theme.palette.primary.dark },
-                            width: { xs: '100%', sm: 'auto' },
-                        }}
-                    >
-                        {liked ? 'Unlike' : 'Like'}
-                    </Button>
+                        <Button
+                            startIcon={<FavoriteIcon />}
+                            onClick={handleLike} // Xato tuzatildi: Funksiyaga ortiqcha argument o'tkazilmadi
+                            sx={{
+                                bgcolor: theme.palette.primary.main,
+                                color: 'white',
+                                px: 5,
+                                py: 1.2,
+                                fontSize: '1.1rem',
+                                '&:hover': { bgcolor: theme.palette.primary.dark },
+                                width: { xs: '100%', sm: 'auto' },
+                            }}
+                        >
+                            {liked ? 'Unlike' : 'Like'}
+                        </Button>
                         <Button
                             onClick={handleChatClick}
                             startIcon={isChatCreating ? <CircularProgress size={20} color="inherit" /> : <ChatIcon />}
@@ -398,10 +400,7 @@ const PartnerSearchContent: React.FC<PartnerSearchProps> = ({ user, onSearch, on
     const { t } = useTranslation('common');
 
     // NEXT_PUBLIC_API_URL muhit o'zgaruvchisidan API URLni olamiz
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-    // Rasmlar uchun asosiy domenni olamiz, masalan, "https://api.example.com" dan "https://example.com"
-    const baseDomain = apiUrl?.replace('/api', '') || '';
-
+    const apiUrl = 'https://68ac5f519148d.xvest1.ru/api';
     const userTariff = user?.currentSubscription?.subscription?.name?.toLowerCase() || 'free';
     const remainingSearches = user?.currentSubscription?.daily_searches_remaining ?? 0;
 
@@ -540,7 +539,7 @@ const PartnerSearchContent: React.FC<PartnerSearchProps> = ({ user, onSearch, on
 
                 {userTariff === 'free' && (
                     <Typography component="div" variant="body1" color="#e3f2fd" sx={{ mb: 2, fontWeight: 'medium' }}>
-                       {t('Partner.free_searches_remaining_today:')} <Chip label={remainingSearches} color={remainingSearches > 0 ? 'success' : 'error'} size="medium" sx={{ ml: 1, px: 1.5, py: 0.5, fontSize: '0.9rem' }} />
+                        {t('Partner.free_searches_remaining_today:')} <Chip label={remainingSearches} color={remainingSearches > 0 ? 'success' : 'error'} size="medium" sx={{ ml: 1, px: 1.5, py: 0.5, fontSize: '0.9rem' }} />
                     </Typography>
                 )}
 
@@ -671,7 +670,7 @@ const PartnerSearchContent: React.FC<PartnerSearchProps> = ({ user, onSearch, on
                     ) : hasSearched && !featuredProfile ? (
                         <Typography variant="h6" color="#ffffff">{t('Partner.No_matching')}</Typography>
                     ) : hasSearched && featuredProfile && (
-                        <MatchProfileCard profile={featuredProfile} userTariff={userTariff} baseDomain={baseDomain} user={user} />
+                        <MatchProfileCard profile={featuredProfile} userTariff={userTariff} apiUrl={apiUrl} user={user} />
                     )}
                 </Box>
             </Box>

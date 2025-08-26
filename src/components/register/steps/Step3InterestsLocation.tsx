@@ -36,7 +36,7 @@ const Step3InterestsLocation: React.FC<StepProps> = ({ data, updateData, errors 
   const [snackbarMessage, setSnackbarMessage] = useState('');
   const [snackbarSeverity, setSnackbarSeverity] = useState<'success' | 'error' | 'info' | 'warning'>('info');
 
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+  const apiUrl = "https://68ac5f519148d.xvest1.ru/api";
 
   const handleSnackbarClose = useCallback((event?: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === 'clickaway') {
