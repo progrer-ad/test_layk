@@ -257,7 +257,7 @@ const ProfileSetupPage: React.FC = () => {
           });
         }
         if (apiUser?.current_avatar?.path) {
-          setAvatarPreview(`${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/${apiUser.current_avatar.path}`);
+          setAvatarPreview(`https://68ac5f519148d.xvest1.ru/storage/${apiUser.current_avatar.path}`);
         }
       } catch (error: any) {
         setSnackbarMessage('Error loading profile data.');

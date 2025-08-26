@@ -200,7 +200,7 @@ const MatchProfileCard: React.FC<{ profile: PartnerProfile, userTariff: string, 
         if (path.startsWith('http') || path.startsWith('https') || path.startsWith('/')) {
             return path;
         }
-        return `${baseDomain}/storage/${path}`;
+        return `https://68ac5f519148d.xvest1.ru/storage/${path}`;
     };
 
     const finalImageUrl = getImageUrl(profile.image_url);
@@ -210,7 +210,7 @@ const MatchProfileCard: React.FC<{ profile: PartnerProfile, userTariff: string, 
     const handleLike = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.post('http://127.0.0.1:8000/api/likes/toggle', {
+            const response = await axios.post('https://68ac5f519148d.xvest1.ru/api/likes/toggle', {
                 liked_user_id: profile.id,
             }, {
                 headers: {
@@ -241,7 +241,7 @@ const MatchProfileCard: React.FC<{ profile: PartnerProfile, userTariff: string, 
 
             // API'ga POST so'rov yuborib, yangi chatni yaratish
             const response = await axios.post(
-                `${baseDomain}/api/chats`,
+                `https://68ac5f519148d.xvest1.ru/api/chats`,
                 { partner_id: profile.id }, // O'zgartirildi: user2_id o'rniga partner_id ishlatildi
                 { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -398,7 +398,7 @@ const PartnerSearchContent: React.FC<PartnerSearchProps> = ({ user, onSearch, on
     const { t } = useTranslation('common');
 
     // NEXT_PUBLIC_API_URL muhit o'zgaruvchisidan API URLni olamiz
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const apiUrl = 'https://68ac5f519148d.xvest1.ru/api';
     // Rasmlar uchun asosiy domenni olamiz, masalan, "https://api.example.com" dan "https://example.com"
     const baseDomain = apiUrl?.replace('/api', '') || '';
 
