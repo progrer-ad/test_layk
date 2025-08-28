@@ -8,7 +8,7 @@ import MessageInput from './MessageInput';
 import axios from 'axios';
 
 // Get the base URL from environment variables
-const API_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+const API_BASE_URL = 'https://68ac5f519148d.xvest1.ru';
 
 export default function ChatPage({
     selectedChat,

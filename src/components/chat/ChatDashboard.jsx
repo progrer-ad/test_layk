@@ -9,7 +9,7 @@ import { customTheme } from "@/components/chat/theme";
 import axios from 'axios';
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_URL;
+axios.defaults.baseURL = 'https://68ac5f519148d.xvest1.ru/api';
 
 export default function ChatDashboard() {
   const [selectedChat, setSelectedChat] = useState(null);
