@@ -14,11 +14,11 @@
   "joinNow": "Únete ahora",
   "heroImageAlt": "Ilustración de aplicación de citas",
   "about": {
-    "title": "Acerca de Elayk",
-    "subtitle": "Elayk es más que una app de citas: es un espacio seguro y vibrante donde personas de todos los ámbitos se encuentran, conectan y crean historias hermosas.",
+    "title": "Acerca de Alike",
+    "subtitle": "Alike es más que una app de citas: es un espacio seguro y vibrante donde personas de todos los ámbitos se encuentran, conectan y crean historias hermosas.",
     "cards": {
       "matchesTitle": "Más de 1 millón de coincidencias",
-      "matchesDesc": "Más de un millón de corazones han encontrado su pareja perfecta con Elayk.",
+      "matchesDesc": "Más de un millón de corazones han encontrado su pareja perfecta con Alike.",
       "securityTitle": "Seguridad Primero",
       "securityDesc": "Tu privacidad es nuestra máxima prioridad con cifrado y verificación avanzada.",
       "communityTitle": "Comunidad Amigable",
@@ -30,7 +30,7 @@
       "diverseTitle": "Diversa e Inclusiva",
       "diverseText": "Abrazamos la diversidad y creamos espacios donde todos pertenecen."
     },
-    "cta": "Únete a Elayk Hoy"
+    "cta": "Únete a Alike Hoy"
   },
   "services": {
     "title": "Nuestros Servicios",
@@ -300,7 +300,8 @@
       "free_companion": "Acompañante gratuito para eventos",
       "free_skills_training": "Entrenamiento de habilidades gratuito",
       "socialization": "Socialización para mis hijos con otros niños",
-      "housing_for_help": "Dispuesto a ofrecer vivienda gratuita a cambio de ayuda en la casa"
+      "housing_for_help": "Dispuesto a ofrecer vivienda gratuita a cambio de ayuda en la casa",
+      "mentor": "Mentor" 
     },
     "skills_training_options": {
       "ready_to_teach": "Listo para enseñar a alguien",
@@ -642,5 +643,20 @@
     "loading": "Cargando...",
     "error": "No se pudieron cargar las noticias. Por favor, inténtelo de nuevo más tarde.",
     "no_news": "No hay noticias disponibles en este momento."
+  },
+    "motiv": {
+    "hero": {
+      "title": "¡Encuentra a tu gente!",
+      "subtitle": "¡Un psicólogo no te ayudará si no ha caminado en tus zapatos! ¡Deja de complacer a la gente solo para ser aceptado!"
+    },
+    "quotes": {
+      "quote1": "Lo similar atrae a lo similar.",
+      "quote2": "“Una persona tiende a asociarse con los de su tipo, ya que en tal estado se siente más como un ser humano.”",
+      "author": "— Immanuel Kant",
+      "quote3": "El tiempo es dinero, y la energía es vida. ¡Deja de dársela a personas que nunca han estado en tu lugar!",
+      "quote4": "Deja de sentirte en deuda por lo que nunca tuviste por tu cuenta.",
+      "highlight1": "Encuentra un alma gemela.",
+      "highlight2": "¡Ayuda a tu gente!"
+    }
   }
 }

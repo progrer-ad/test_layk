@@ -123,7 +123,7 @@ const Sidebar: React.FC<SidebarProps> = ({
               textOverflow: 'ellipsis',
             }}
           >
-            Elayk
+            Alike
           </Typography>
         )}
         {isPermanent && (

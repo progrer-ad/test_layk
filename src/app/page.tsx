@@ -5,6 +5,7 @@ import AboutUsSection from '@/components/AboutUsSection';
 import ServicesSection from '@/components/ServicesSection';
 import NewsSection from '@/components/NewsSection';
 import ContactSection from '@/components/ContactSection';
+import MotivationalQuotesSection from '@/components/MotivationalQuotesSection';
 import { Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
@@ -17,7 +18,10 @@ export default function HomePage() {
       <Box id="home-section">
         <HeroSection title={t('hero.title')} subtitle={t('hero.subtitle')} />
       </Box>
-
+      
+      <Box id="about-testimonial">
+        <MotivationalQuotesSection />
+      </Box>
       {/* About Us Section */}
       <Box id="about-section">
         <AboutUsSection title={t('about.title')} desc={t('about.desc')} />

@@ -14,11 +14,11 @@
   "joinNow": "立即加入",
   "heroImageAlt": "约会应用插图",
   "about": {
-    "title": "关于 Elayk",
-    "subtitle": "Elayk 不仅仅是一个约会应用——它是一个安全、充满活力的空间，让来自各行各业的人相遇、交流并共同创造美好故事。",
+    "title": "关于 Alike",
+    "subtitle": "Alike 不仅仅是一个约会应用——它是一个安全、充满活力的空间，让来自各行各业的人相遇、交流并共同创造美好故事。",
     "cards": {
       "matchesTitle": "超过 100 万次配对",
-      "matchesDesc": "超过一百万颗心在 Elayk 找到了完美伴侣。",
+      "matchesDesc": "超过一百万颗心在 Alike 找到了完美伴侣。",
       "securityTitle": "安全第一",
       "securityDesc": "您的隐私是我们的首要任务，采用先进加密和验证技术。",
       "communityTitle": "友好社区",
@@ -30,7 +30,7 @@
       "diverseTitle": "多样与包容",
       "diverseText": "我们拥抱多样性，创造每个人都能归属的空间。"
     },
-    "cta": "立即加入 Elayk"
+    "cta": "立即加入 Alike"
   },
   "services": {
     "title": "我们的服务",
@@ -300,7 +300,8 @@
       "free_companion": "活动的免费伴侣",
       "free_skills_training": "免费技能培训",
       "socialization": "我的孩子与他人的社交",
-      "housing_for_help": "愿意提供免费住房以换取家务帮助"
+      "housing_for_help": "愿意提供免费住房以换取家务帮助",
+      "mentor": "中文" 
     },
     "skills_training_options": {
       "ready_to_teach": "愿意教别人",
@@ -642,5 +643,20 @@
     "loading": "正在加载...",
     "error": "无法加载新闻。请稍后重试。",
     "no_news": "目前没有新闻可用。"
+  },
+    "motiv": {
+    "hero": {
+      "title": "找到你的同类！",
+      "subtitle": "心理医生如果没穿过你的鞋，也帮不了你！别再为了被接受而取悦他人了！"
+    },
+    "quotes": {
+      "quote1": "物以类聚。",
+      "quote2": "“人倾向于与同类交往，因为在这样的状态下，他感觉更像一个人。”",
+      "author": "— 伊曼努尔·康德",
+      "quote3": "时间就是金钱，能量就是生命。别再把它浪费在那些从未经历你处境的人身上了！",
+      "quote4": "别再因为你从未真正拥有过的东西而感到亏欠。",
+      "highlight1": "找到一个灵魂伴侣。",
+      "highlight2": "帮助你的同类！"
+    }
   }
 }

@@ -15,11 +15,11 @@
   "heroImageAlt": "Dating App Illustration",
 
   "about": {
-    "title": "About Elayk",
-    "subtitle": "Elayk is more than just a dating app – it’s a safe, vibrant space where people from all walks of life meet, connect, and create beautiful stories together.",
+    "title": "About Alike",
+    "subtitle": "Alike is more than just a dating app – it’s a safe, vibrant space where people from all walks of life meet, connect, and create beautiful stories together.",
     "cards": {
       "matchesTitle": "1M+ Matches",
-      "matchesDesc": "Over one million hearts have found their perfect match with Elayk.",
+      "matchesDesc": "Over one million hearts have found their perfect match with Alike.",
       "securityTitle": "Security First",
       "securityDesc": "Your privacy is our top priority with advanced encryption and verification.",
       "communityTitle": "Friendly Community",
@@ -31,7 +31,7 @@
       "diverseTitle": "Diverse & Inclusive",
       "diverseText": "We embrace diversity and create spaces where everyone belongs."
     },
-    "cta": "Join Elayk Today"
+    "cta": "Join Alike Today"
   },
   "services": {
     "title": "Our Services",
@@ -633,6 +633,21 @@
     "loading": "Loading...",
     "error": "Could not load news. Please try again later.",
     "no_news": "No news available at the moment."
+  },
+   "motiv": {
+    "hero": {
+      "title": "Find your people!",
+      "subtitle": "A psychologist won’t help if they haven’t walked in your shoes! Stop people-pleasing just to be accepted!"
+    },
+    "quotes": {
+      "quote1": "Alike attracts alike.",
+      "quote2": "“A person tends to associate with likewise, for in such state he feels more like human.”",
+      "author": "— Immanuel Kant",
+      "quote3": "Time is money, and energy is life. Stop giving it to people who have never been in your place!",
+      "quote4": "Stop feeling in debt for what you never had on your own.",
+      "highlight1": "Find a soulmate.",
+      "highlight2": "Help your people!"
+    }
   }
     
 }

@@ -55,13 +55,59 @@ const Navbar = () => {
 
   const { language, changeLanguage } = useI18n(); // <-- useI18n hooki ishlatiladi
 
-  const menuItems = [
-    { label: language === 'en' ? 'Home' : language === 'ru' ? 'Главная' : '首页', id: 'home-section' },
-    { label: language === 'en' ? 'About Us' : language === 'ru' ? 'О нас' : '关于我们', id: 'about-section' },
-    { label: language === 'en' ? 'Services' : language === 'ru' ? 'Услуги' : '服务', id: 'services-section' },
-    { label: language === 'en' ? 'News' : language === 'ru' ? 'Новости' : '新闻', id: 'news-section' },
-    { label: language === 'en' ? 'Contacts' : language === 'ru' ? 'Контакты' : '联系', id: 'contact-section' },
-  ];
+const menuItems = [
+  { 
+    label: 
+      language === 'en' ? 'Home' :
+      language === 'ru' ? 'Главная' :
+      language === 'zh' ? '首页' :
+      language === 'es' ? 'Inicio' :
+      language === 'hi' ? 'मुखपृष्ठ' :
+      'الرئيسية',
+    id: 'home-section'
+  },
+  { 
+    label: 
+      language === 'en' ? 'About Us' :
+      language === 'ru' ? 'О нас' :
+      language === 'zh' ? '关于我们' :
+      language === 'es' ? 'Sobre nosotros' :
+      language === 'hi' ? 'हमारे बारे में' :
+      'معلومات عنا',
+    id: 'about-section'
+  },
+  { 
+    label: 
+      language === 'en' ? 'Services' :
+      language === 'ru' ? 'Услуги' :
+      language === 'zh' ? '服务' :
+      language === 'es' ? 'Servicios' :
+      language === 'hi' ? 'सेवाएँ' :
+      'الخدمات',
+    id: 'services-section'
+  },
+  { 
+    label: 
+      language === 'en' ? 'News' :
+      language === 'ru' ? 'Новости' :
+      language === 'zh' ? '新闻' :
+      language === 'es' ? 'Noticias' :
+      language === 'hi' ? 'समाचार' :
+      'الأخبار',
+    id: 'news-section'
+  },
+  { 
+    label: 
+      language === 'en' ? 'Contacts' :
+      language === 'ru' ? 'Контакты' :
+      language === 'zh' ? '联系' :
+      language === 'es' ? 'Contactos' :
+      language === 'hi' ? 'संपर्क' :
+      'اتصل بنا',
+    id: 'contact-section'
+  },
+];
+
 
   return (
     <>
