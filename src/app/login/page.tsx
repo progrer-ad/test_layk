@@ -70,6 +70,7 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
 
 // --- MAIN LOGIN PAGE COMPONENT ---
 const LoginPage = () => {
+
     const router = useRouter();
     const { t } = useTranslation('common');
     const [email, setEmail] = useState('');
@@ -93,20 +94,12 @@ const LoginPage = () => {
     const [captchaInputError, setCaptchaInputError] = useState('');
 
     // --- Redirects authenticated users from this page ---
-    // Avvalgi localStorage tekshiruvi o'rniga, cookie'ni tekshirish uchun yangi mantiq kiritiladi.
     useEffect(() => {
-        // getServerSideProps yoki middleware orqali token mavjudligini tekshirish tavsiya etiladi.
-        // Hozircha oddiy, klient tomonida tekshiruv qoldiriladi.
-        const checkAuthStatus = async () => {
-            try {
-                // Bu so'rov brauzerdagi cookie'lar bilan avtomatik yuboriladi
-                await api.get('/user'); // API'dan foydalanuvchi ma'lumotini olishga urinish
-                router.replace('/dashboard'); // Agar muvaffaqiyatli bo'lsa, yo'naltirish
-            } catch (error) {
-                // Agar 401 (Unauthenticated) xatosi kelsa, demak foydalanuvchi kirgan emas.
-            }
-        };
-        checkAuthStatus();
+        const token = localStorage.getItem('token');
+        const user = localStorage.getItem('user');
+        if (token || user) {
+            router.replace('/dashboard');
+        }
     }, [router]);
 
     // --- Fetches CAPTCHA status on component mount ---
@@ -147,6 +140,8 @@ const LoginPage = () => {
 
         const ctx = canvas.getContext('2d');
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Foni va chiziqlar
         ctx.fillStyle = '#fef5f8';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.strokeStyle = '#ff6384';
@@ -209,14 +204,18 @@ const LoginPage = () => {
             setSnackbarMessage(t('captchaInvalid'));
             setSnackbarSeverity('error');
             setSnackbarOpen(true);
-            generateCaptcha();
+            generateCaptcha(); // Xato bo'lsa, yangi CAPTCHA yaratish
             setLoading(false);
             return;
         }
 
         try {
-            // CSRF cookie'sini olish
-            await api.get('/sanctum/csrf-cookie');
+            // --- CORS and CSRF cookie for (important) ---
+            const csrfAxios = axios.create({
+                baseURL: process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || "https://68ac5f519148d.xvest1.ru",
+                withCredentials: true,
+            });
+            await csrfAxios.get('/sanctum/csrf-cookie');
 
             const payload: any = { email, password };
             const response = await api.post('/login', payload);
@@ -225,12 +224,10 @@ const LoginPage = () => {
             setSnackbarSeverity('success');
             setSnackbarOpen(true);
 
-            // MUHIM O'ZGARTIRISH: Tokenni localStoragega saqlash qismi olib tashlandi!
-            // Endi backenddan qaytgan token HTTP-Only cookie'da saqlanadi.
-            
+            if (response.data.token) {
+                localStorage.setItem('token', response.data.token);
+            }
             if (response.data.user) {
-                // Foydalanuvchi ma'lumotini localStorage'ga saqlash xavfsiz.
-                // U maxfiy ma'lumot emas, faqat UI uchun.
                 localStorage.setItem('user', JSON.stringify(response.data.user));
                 const user = response.data.user;
                 if (!user.email_verified_at) {
@@ -246,13 +243,15 @@ const LoginPage = () => {
 
         } catch (error: any) {
             setLoading(false);
+
             let errorMessage = t('loginError');
             if (isCaptchaEnabled) {
-                generateCaptcha();
+                generateCaptcha(); // Xato bo'lganda CAPTCHA'ni yangilash
             }
 
             if (axios.isAxiosError(error) && error.response && error.response.data) {
                 const responseData = error.response.data;
+
                 if (responseData.email_not_verified) {
                     errorMessage = responseData.message || t('emailNotVerified');
                     setSnackbarSeverity('info');
@@ -268,6 +267,7 @@ const LoginPage = () => {
                 errorMessage = t('networkError');
                 setSnackbarSeverity('error');
             }
+
             setSnackbarMessage(errorMessage);
             setSnackbarOpen(true);
         }
