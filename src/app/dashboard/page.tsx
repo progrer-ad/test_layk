@@ -4,36 +4,30 @@
 import DashboardLayout from '@/components/dashboard/DashboardLayout';
 import { Box, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 
 const DashboardIndexPage = () => {
   const [userName, setUserName] = useState('Foydalanuvchi'); // Default value
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Backenddan foydalanuvchini olish (cookie bilan)
-    axios.get("https://68ac5f519148d.xvest1.ru/api/debug-auth", {
-      withCredentials: true, // Cookie yuborilsin
-      headers: {
-        Accept: "application/json",
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      try {
+        const user = JSON.parse(storedUser);
+        setUserName(user.name);
+      } catch (e) {
+        // Handle error, maybe clear localStorage
+        localStorage.removeItem('user');
+        localStorage.removeItem('token');
       }
-    })
-      .then(res => {
-        console.log("Backenddan foydalanuvchi:", res.data);
-        if (res.data?.user) {
-          setUserName(res.data.user.name);
-        }
-      })
-      .catch(err => {
-        console.error("Auth tekshiruv xatosi:", err.response?.data || err);
-      })
-      .finally(() => setLoading(false));
+    }
   }, []);
 
   return (
     <DashboardLayout>
-      <Box sx={{ py: { xs: 1, sm: 2 } }}>
-
+      <Box sx={{ py: { xs: 1, sm: 2 } }}> {/* Paddingni responsiv qildik */}
+        
+        {/* Bu yerga kelajakda boshqa dashboard komponentlaringizni qo'shishingiz mumkin */}
+        
       </Box>
     </DashboardLayout>
   );
