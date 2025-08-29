@@ -99,7 +99,7 @@ export default function MessageItem({
             if (!token) throw new Error("Avtorizatsiya tokeni topilmadi.");
 
             const response = await axios.put(
-                `https://68ac5f519148d.xvest1.ru/api/messages/${message.id}`,
+                `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/messages/${message.id}`,
                 { content: editedContent.trim() },
                 {
                     headers: {
@@ -135,7 +135,7 @@ export default function MessageItem({
             if (!token) throw new Error("Avtorizatsiya tokeni topilmadi.");
 
             await axios.delete(
-                `https://68ac5f519148d.xvest1.ru/api/messages/${message.id}`,
+                `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/messages/${message.id}`,
                 {
                     headers: {
                         Accept: 'application/json',
@@ -158,11 +158,11 @@ export default function MessageItem({
 
     const fileUrl = message.file_url?.startsWith('http')
         ? message.file_url
-        : `https://68ac5f519148d.xvest1.ru${message.file_url || ''}`;
+        : `${process.env.NEXT_PUBLIC_BACKEND_URL}${message.file_url || ''}`;
 
     const stickerUrl = message.sticker_url?.startsWith('http')
         ? message.sticker_url
-        : `https://68ac5f519148d.xvest1.ru${message.sticker_url || ''}`;
+        : `${process.env.NEXT_PUBLIC_BACKEND_URL}${message.sticker_url || ''}`;
 
     const fileType = message.file_type?.toLowerCase();
 
@@ -251,7 +251,7 @@ export default function MessageItem({
 
     const normalizeAvatar = (url, name, fallbackColor = '334155') => {
         if (url?.startsWith('http')) return url;
-        if (url) return `https://68ac5f519148d.xvest1.ru/storage/${url}`;
+        if (url) return `${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/${url}`;
         return `https://placehold.co/40x40/${fallbackColor}/fff?text=${name?.[0]?.toUpperCase() || 'U'}`;
     };
 
@@ -270,7 +270,7 @@ export default function MessageItem({
                     if (!token) return;
 
                     await axios.post(
-                        `https://68ac5f519148d.xvest1.ru/api/messages/${message.id}/mark-as-read`,
+                        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/messages/${message.id}/mark-as-read`,
                         {},
                         {
                             headers: {
